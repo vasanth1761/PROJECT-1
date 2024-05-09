@@ -47,6 +47,7 @@ public class LibraryUser {
 			   days=sc.nextInt();
 		   }
 		}
+		
 		lib.setDays(days);
 		LibraryEnd a=new LibraryEnd();
 		a.libraryOutput(lib.getDays());

@@ -8,7 +8,6 @@ public class LibraryValidation {
 	public static void usernameLoginAdmin()
 	{    
 		Scanner sc=new Scanner(System.in);
-//		String userName1="vasanth";
 		LinkedList<String> li=new LinkedList<String>();
 		li.add("vasanth");
 		li.add("chandru");

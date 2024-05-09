@@ -53,7 +53,8 @@ public class LibraryBussinessLogic {
 //				lib.setName(user);
 				String id=loginoobj.register();
 				break;
-			} else {
+			} else 
+			{
 				System.err.println("Enter the valid data:");
 				account = sc.next();
 			}
@@ -70,151 +71,151 @@ public class LibraryBussinessLogic {
 	    
 	    
 	    
-		Scanner sc = new Scanner(System.in);
-		boolean b = true;
-		while (b) {
-
-			String book = sc.next();
-			switch (book.toLowerCase()) {
-			case "comics":
-				System.out.println("---GREAT---");
-				System.out.println("Available");
-				System.out.println("1.IRONMAN" + "\n" + "2.SUPERMAN" + "\n" + "3.DEADPOOL");
-				System.out.println("Select the type:");
-				int typ=LibraryValidation.bookTypeValid();
-      
-		        switch (typ) {
-				case 1:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				case 2:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				case 3:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				default:
-					System.out.println("The book is not available");
-					System.out.println("Enter the proper book name");
-				}
-				
-				b = false;
-				break;
-			case "horror":
-				System.out.println("---GREAT---");
-				System.out.println("Available");
-				System.out.println("1.DRACULA" + "\n" + "2.IT" + "\n" + "3.PET SEMETARY");
-				System.out.println("Select the type:");
-				int horror =LibraryValidation.bookTypeValid();
-				
-					switch (horror)
-
-					{
-					case 1:
-						System.out.println("part 1 or part2");
-						LibraryValidation.bookPartValidation();
-						System.out.println("-The book is available-");
-						break;
-					case 2:
-						System.out.println("part 1 or part2");
-						LibraryValidation.bookPartValidation();
-						System.out.println("-The book is available-");
-						break;
-					case 3:
-						System.out.println("part 1 or part2");
-						LibraryValidation.bookPartValidation();
-						System.out.println("-The book is available-");
-						break;
-					
-				}
-				b = false;
-				break;
-			case "science fiction":
-				System.out.println("---GREAT---");
-				System.out.println("Available");
-				System.out.println("1.STATION ELEVAN" + "\n" + "2.DUNE" + "\n" + "3.THE MARTIAN");
-				System.out.println("Select the type:");
-				int science = LibraryValidation.bookTypeValid();;
-				switch (science) {
-				case 1:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				case 2:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				case 3:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				}
-				b = false;
-				break;
-			case "adventure":
-				System.out.println("---GREAT---");
-				System.out.println("Available");
-				System.out.println("1.THE ROAD" + "\n" + "2.HARRY PORTER" + "\n" + "3.TREASURE ISLANDS");
-				System.out.println("Select the type:");
-				int adventure = LibraryValidation.bookTypeValid();;
-				switch (adventure) {
-				case 1:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				case 2:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				case 3:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				}
-				b = false;
-				break;
-			case "fantasy":
-				System.out.println("---GREAT---");
-				System.out.println("Available");
-
-				System.out.println("1.GAME OF THRONES" + "\n" + "2.THE HOUSE OF DRAGONS" + "\n" + "3.CITY OF GLASS+" );
-				System.out.println("Select the type:");
-				int fantasy =LibraryValidation.bookTypeValid();
-				switch (fantasy) {
-				case 1:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				case 2:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				case 3:
-					System.out.println("part 1 or part2");
-					LibraryValidation.bookPartValidation();
-					System.out.println("-The book is available-");
-					break;
-				}
-				b = false;
-			default:
-				System.out.println("Enter the valid data");
-
-			}
-		}
+//		Scanner sc = new Scanner(System.in);
+//		boolean b = true;
+//		while (b) {
+//
+//			String book = sc.next();
+//			switch (book.toLowerCase()) {
+//			case "comics":
+//				System.out.println("---GREAT---");
+//				System.out.println("Available");
+//				System.out.println("1.IRONMAN" + "\n" + "2.SUPERMAN" + "\n" + "3.DEADPOOL");
+//				System.out.println("Select the type:");
+//				int typ=LibraryValidation.bookTypeValid();
+//      
+//		        switch (typ) {
+//				case 1:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				case 2:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				case 3:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				default:
+//					System.out.println("The book is not available");
+//					System.out.println("Enter the proper book name");
+//				}
+//				
+//				b = false;
+//				break;
+//			case "horror":
+//				System.out.println("---GREAT---");
+//				System.out.println("Available");
+//				System.out.println("1.DRACULA" + "\n" + "2.IT" + "\n" + "3.PET SEMETARY");
+//				System.out.println("Select the type:");
+//				int horror =LibraryValidation.bookTypeValid();
+//				
+//					switch (horror)
+//
+//					{
+//					case 1:
+//						System.out.println("part 1 or part2");
+//						LibraryValidation.bookPartValidation();
+//						System.out.println("-The book is available-");
+//						break;
+//					case 2:
+//						System.out.println("part 1 or part2");
+//						LibraryValidation.bookPartValidation();
+//						System.out.println("-The book is available-");
+//						break;
+//					case 3:
+//						System.out.println("part 1 or part2");
+//						LibraryValidation.bookPartValidation();
+//						System.out.println("-The book is available-");
+//						break;
+//					
+//				}
+//				b = false;
+//				break;
+//			case "science fiction":
+//				System.out.println("---GREAT---");
+//				System.out.println("Available");
+//				System.out.println("1.STATION ELEVAN" + "\n" + "2.DUNE" + "\n" + "3.THE MARTIAN");
+//				System.out.println("Select the type:");
+//				int science = LibraryValidation.bookTypeValid();;
+//				switch (science) {
+//				case 1:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				case 2:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				case 3:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				}
+//				b = false;
+//				break;
+//			case "adventure":
+//				System.out.println("---GREAT---");
+//				System.out.println("Available");
+//				System.out.println("1.THE ROAD" + "\n" + "2.HARRY PORTER" + "\n" + "3.TREASURE ISLANDS");
+//				System.out.println("Select the type:");
+//				int adventure = LibraryValidation.bookTypeValid();;
+//				switch (adventure) {
+//				case 1:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				case 2:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				case 3:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				}
+//				b = false;
+//				break;
+//			case "fantasy":
+//				System.out.println("---GREAT---");
+//				System.out.println("Available");
+//
+//				System.out.println("1.GAME OF THRONES" + "\n" + "2.THE HOUSE OF DRAGONS" + "\n" + "3.CITY OF GLASS+" );
+//				System.out.println("Select the type:");
+//				int fantasy =LibraryValidation.bookTypeValid();
+//				switch (fantasy) {
+//				case 1:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				case 2:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				case 3:
+//					System.out.println("part 1 or part2");
+//					LibraryValidation.bookPartValidation();
+//					System.out.println("-The book is available-");
+//					break;
+//				}
+//				b = false;
+//			default:
+//				System.out.println("Enter the valid data");
+//
+//			}
+//		}
 	}
 
 	public static void toSelectAddDelte(int addDelete)throws ClassNotFoundException,SQLException

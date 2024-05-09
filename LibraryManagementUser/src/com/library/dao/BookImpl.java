@@ -26,7 +26,6 @@ public  class BookImpl implements BookNameDAO {
 //			 for(int i=1;i<=columnnumber;i++)
 //			 {
 //				 System.out.print(rs.getColumnName(i)+"\t");
-//				 
 			 
 //			 System.out.println();
 			 while(r.next())

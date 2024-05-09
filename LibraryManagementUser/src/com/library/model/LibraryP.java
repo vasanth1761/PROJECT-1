@@ -14,6 +14,7 @@ public class LibraryP {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+		
 	}
 	public long getPhonenumber() {
 		return phonenumber;

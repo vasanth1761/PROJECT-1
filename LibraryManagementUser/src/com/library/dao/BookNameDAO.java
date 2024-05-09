@@ -10,6 +10,8 @@ public interface BookNameDAO
 	String register()throws ClassNotFoundException,SQLException;
 	void update()throws ClassNotFoundException,SQLException;
     void delete()throws ClassNotFoundException,SQLException;
+//    String updateUser()throws ClassNotFoundException,SQLEXception;
     String select() throws ClassNotFoundException,SQLException;
+    
     
 }

@@ -30,7 +30,8 @@ public class Library {
         while(true) 
         {
         	int adminUser=0;
-    		while(sc.hasNext()) {
+    		while(sc.hasNext()) 
+    		{
     		try {
     	        adminUser=sc.nextInt();
     	        break;

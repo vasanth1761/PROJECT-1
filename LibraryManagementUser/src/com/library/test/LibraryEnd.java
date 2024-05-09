@@ -1,6 +1,7 @@
 package com.library.test;
 
-public class LibraryEnd {
+public class LibraryEnd 
+{
 
 	
     public void libraryOutput(int days)
