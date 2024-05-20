@@ -59,14 +59,14 @@ public class LibraryValidation {
 		while(true)
 		{
 			
-			if(add ==1||add==2||add==3)
+			if(add ==1||add==2||add==3||add==4)
 			{
 				return add;
 			}
 			else
 			{
 				System.err.printf("Invalid!!!");
-				System.err.println("you only able to add and delete:");
+				System.err.println("you only able to add ,delete ,update ,view:");
 				System.err.println("You should enter the alpha numeric value:");
 	    		add=sc.nextInt();
 			}
@@ -94,7 +94,7 @@ public class LibraryValidation {
 	}
 	public static String UserId()
 	{   
-		String s1="^[a-z]+[0-9]+$";
+		String s1="^[A-Za-z]+[0-9]+$";
 		Scanner sc=new Scanner(System.in);
 		String userId=sc.next();
 		while(true)
@@ -105,7 +105,8 @@ public class LibraryValidation {
 			}
 			else
 			{
-				System.err.println("You should enter the alphabetic value ");
+				System.err.println("INVALID!!! value ");
+				System.out.println("You should enter the alphanumeric value");
 				userId=sc.next();
 				
 			}
@@ -126,8 +127,9 @@ public class LibraryValidation {
 					
 				}
 				else
-				{
-					System.err.println("you should use uppercase or lowercase:");
+				{   
+					System.err.println("INVALID!!!! value");
+					System.err.println("you should use uppercase or  lowercase:");
 					name=sc.next();
 				}
 			}
@@ -146,11 +148,12 @@ public class LibraryValidation {
 				return password;
 			}
 			else
-			{
-				System.err.println("you should use one uppercase:");
-				System.err.println("you should use one Lowercaase:");
-				System.err.println("you should use one Specialcase:");
-				System.err.println("you should use one numeric value:");
+			{   
+				System.err.println("INVALID!!!! value");
+				System.err.println("you must use one uppercase:");
+				System.err.println("you must  use one Lowercaase:");
+				System.err.println("you must use one Specialcase:");
+				System.err.println("you must use one numeric value:");
 				System.err.println("The password length should be minimum 5:");
 				
 				password=sc.next();
@@ -170,14 +173,15 @@ public class LibraryValidation {
 			return phone;
 			}
 		   else
-		   {
+		   {   
+			   
 			   System.out.println("Enter the mobile number again");
 			   phone=sc.nextInt();
 		   }
 		}
 	}
 
-	public static void bookPartValidation() 
+	public static int bookPartValidation() 
 	{
 		Scanner sc=new Scanner(System.in);
 		int part=sc.nextInt();
@@ -185,11 +189,12 @@ public class LibraryValidation {
 		{
 			if(part==1||part==2)
 			{
-				break;
+				return part;
 			}
 			else
-			{
+			{   
 				System.err.println("PART IS NOT AVAILABLE:");
+				System.out.println("Available books are mentioned above");
 				part=sc.nextInt();
 			}
 		}

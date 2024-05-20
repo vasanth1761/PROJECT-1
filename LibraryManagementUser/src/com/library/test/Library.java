@@ -13,20 +13,6 @@ public class Library {
 		
 		Scanner sc=new Scanner(System.in);
 		System.out.println("\n1.ADMIN \n2.USER  \n3.EXIT");
-//		int adminUser=0;
-//		while(sc.hasNext()) {
-//		try {
-//	        adminUser=sc.nextInt();
-//	        
-//		}
-//		catch(InputMismatchException e) 
-//		{
-//			System.out.println(e);
-//			sc.nextLine();
-//			
-//		}
-//		 
-//		}
         while(true) 
         {
         	int adminUser=0;
@@ -59,10 +45,13 @@ public class Library {
 			LibraryValidation.passwordLoginAdmin();
 			
 			System.out.println("        -------WELCOME ADMIN--------");
-			System.out.println("1.ADD A BOOK"+"\n"+"2.DELETE A BOOK"+"\n"+"3.UPDATE A BOOK");
+			
+			System.out.println("1.ADD A BOOK"+"\n"+"2.DELETE A BOOK"+"\n"+"3.UPDATE A BOOK"+"\n"+"4.VIEW ALL");
 			System.out.println("-------------------------------------");
 			int addDelete=LibraryValidation.addBook();
 			LibraryBussinessLogic.toSelectAddDelte(addDelete);
+
+			
 	        return;
 			
 		case 2:
@@ -70,8 +59,8 @@ public class Library {
             return;
 		case 3:
 			 System.out.println("Exited Successfully");
-			 System.out.println("1.ADMIN or 2.USER or 3.EXIT");
-			 adminUser=sc.nextInt();
+
+			 return;
 	    default:
 	    	System.out.println("Select the 1- user or 2-admin or 3-exit");
 	  
@@ -79,14 +68,9 @@ public class Library {
 		}
 		}
 
-//       else
-//        {
-//        	System.out.println("Select the 1- user or 2-admin");
-//        	adminUser=sc.nextInt();
-//        }   
 }
-			
-	    
+	
+
 
 	
 

@@ -68,6 +68,8 @@ public class LibraryBussinessLogic {
 	    obj2.bookname(type);
 	    String bookname = obj2.bookname1();
 	    int bookpart=obj2.bookPart(bookname);
+	    BookImpl.insertTableUser();
+	    
 	    
 	    
 	    
@@ -233,6 +235,9 @@ public class LibraryBussinessLogic {
             break;
 		case 3:
 			daoobj.update();
+			break;
+		case 4:
+			daoobj.viewAll();
 			break;
 
 		}
